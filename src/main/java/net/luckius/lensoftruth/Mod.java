@@ -1,6 +1,7 @@
 package net.luckius.lensoftruth;
 
 import net.fabricmc.api.ModInitializer;
+import net.luckius.lensoftruth.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,5 +12,7 @@ public class Mod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("[Lens Of Truth] - Mod initialization");
+
+		ModItems.registerModItems();
 	}
 }
